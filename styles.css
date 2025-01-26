@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    margin-block: 7px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.container {
+    max-width: 1180px;
+    padding:0 5px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+:root {
+    --primary-clr: orange;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+} 
+.primary-btn {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: 8px 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease-out
+}
+
+.primary-btn:hover {
+    color: var(--primary-clr);
+    transition: 0.3s ease-out;
+    background-color: white;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--primary-clr);
+    border: 1px solid var(--primary-clr);
+    padding: 8px 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-out
+}
+
+.secondary-btn:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-out;
+    background-color: var(--primary-clr);
+    cursor: pointer;
+}
+
+.hover-link {
+    transition: 0.3s ease-out
+}
+
+.hover-link:hover {
+    color: orangered;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.spann {
+    color: var(--primary-clr);
+}
+
+/* NAV BAR START */
+
+ul {
+    list-style: none;
+    gap: 15px;
+   
+}
+
+li a{
+    color:black;
+}
+
+.navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-elements{
+    flex-basis: 790px;
+}
+
+.nav-elements ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+
+
+.nav-toggle{
+    display: none;
+}
+
+/* NAV BAR END */
+
+/* HERO START */
+
+.hero{
+   flex-direction: row;
+
+}
+
+.hero-left{
+    flex-direction: column;
+    gap:25px;
+}
+
+.hero-header h1{
+    font-weight: 600;
+    font-size:45px;
+    white-space: normal;
+    line-height: 50px;
+}
+
+.hero-content{
+    max-width:530px;
+    padding:8px 18px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.hero-header p{
+    font-size:medium;
+    margin-top: 5px;
+    word-wrap: break-word; 
+    white-space: normal; 
+    overflow-wrap: anywhere;
+}
+
+.header__image {
+    position: relative;
+    isolation: isolate;
+    max-width: 500px;
+    height:500px;
+
+}
+
+.header__image::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/header-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    height: 400px;
+  }
+
+  .header__image img {
+    max-width: 520px;
+    margin-inline: auto;
+    height: auto;
+  }
+
+
+  .header__image__card {
+    position: absolute;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background-color: white;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 2s ease-in-out
+  }
+
+  .header__image__card-1 {
+    background: transparent;
+    top: 20%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header__image__card-2 {
+    top: 12%;
+    right: 2rem;
+    transform: translateY(-50%);
+  }
+  
+  .header__image__card-3 {
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+  }
+  
+  .header__image__card-4 {
+    top: 10%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+footer{
+    text-align: center;
+}
